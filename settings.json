@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Axenide/Ambxst/main/docs/mods/settings.schema.json",
+  "version": 1,
+  "fields": [
+    {
+      "key": "liveApply",
+      "label": "Live apply",
+      "description": "Update open Zen windows right away. Without the Zen watcher from the README, a window opens for about two seconds. When off, or while a window is fullscreen, colours apply with the next Zen window.",
+      "type": "boolean",
+      "default": true,
+      "restartRequired": false
+    },
+    {
+      "key": "profiles",
+      "label": "Zen profiles",
+      "description": "Leave empty to use the profiles Zen starts with. Otherwise, profile folders separated by commas, e.g. ~/.config/zen/abcd1234.Default (release).",
+      "type": "string",
+      "default": "",
+      "restartRequired": false
+    }
+  ]
+}

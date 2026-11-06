@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Axenide/Ambxst/main/docs/mods/manifest.schema.json",
+  "manifestVersion": 1,
+  "id": "ecta250.zen-sync",
+  "name": "Zen Browser Sync",
+  "version": "2.0.0",
+  "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Finds the Zen profiles on its own.",
+  "license": "MIT",
+  "author": "Ecta250",
+  "authorUrl": "https://github.com/Ecta250",
+  "homepage": "https://github.com/Ecta250/ambxst-zen-sync",
+  "compatibility": {
+    "api": 1,
+    "ambxst": ">=1.3.14 <2.0.0",
+    "testedBaseCommits": [
+      "83e8462a6b03d4a7d428d5c7365e4ec03f3b63a9"
+    ]
+  },
+  "dependencies": [],
+  "conflicts": [],
+  "commands": [
+    "python3",
+    "axctl"
+  ],
+  "permissions": [
+    "Adds an \"Ambxst\" mod to the Zen profiles it finds (zen-themes.json, chrome/zen-themes/ambxst/chrome.css, chrome/zen-themes.css) and rewrites it on every theme change",
+    "With live apply on and without the optional Zen watcher, briefly opens and closes a Zen window, then gives focus back to the previous window",
+    "payload/zen/install.sh, only if you run it (with sudo for a system install), adds a startup script to the Zen install folder"
+  ],
+  "localization": {
+    "mode": "single",
+    "defaultLanguage": "en"
+  },
+  "settings": {
+    "schema": "settings.json"
+  },
+  "operations": [
+    {
+      "type": "overlay",
+      "source": "payload/scripts/zen_sync.py",
+      "target": "scripts/zen_sync.py"
+    },
+    {
+      "type": "patch",
+      "source": "patches/zen-sync.patch"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+diff --git a/modules/theme/PywalZenGenerator.qml b/modules/theme/PywalZenGenerator.qml
+index 1e7fdd79..a7a4c29b 100644
+--- a/modules/theme/PywalZenGenerator.qml
++++ b/modules/theme/PywalZenGenerator.qml
+@@ -1,10 +1,32 @@
+ import QtQuick
+ import Quickshell
+ import Quickshell.Io
++import qs.modules.services
+ 
+ QtObject {
+     id: root
+ 
++    property bool syncAgain: false
++
++    function syncZen() {
++        if (zenSyncProcess.running) {
++            root.syncAgain = true
++            return
++        }
++        ModsService.getSettings("ecta250.zen-sync", (settings, error) => {
++            const values = error ? {} : (settings?.values ?? {})
++            const command = ["python3", Quickshell.shellDir + "/scripts/zen_sync.py"]
++            if (values.liveApply !== false)
++                command.push("--live")
++            for (const profile of String(values.profiles ?? "").split(/[,\n]/)) {
++                if (profile.trim())
++                    command.push("--profile", profile.trim())
++            }
++            zenSyncProcess.command = command
++            zenSyncProcess.running = true
++        })
++    }
++
+     function generate(Colors) {
+         if (!Colors) return
+ 
+@@ -61,6 +83,9 @@ QtObject {
+     property Process writerProcess: Process {
+         id: writerProcess
+         running: false
++        onExited: (exitCode) => {
++            if (exitCode === 0) root.syncZen()
++        }
+         stdout: StdioCollector {
+             onStreamFinished: console.log("PywalZenGenerator: Theme generated.")
+         }
+@@ -73,4 +98,20 @@ QtObject {
+             }
+         }
+     }
++    property Process zenSyncProcess: Process {
++        id: zenSyncProcess
++        running: false
++        stderr: StdioCollector {
++            onStreamFinished: {
++                const text = this.text.trim()
++                if (text) console.error("ZenSync Error:", text)
++            }
++        }
++        onExited: {
++            if (root.syncAgain) {
++                root.syncAgain = false
++                root.syncZen()
++            }
++        }
++    }
+ }
