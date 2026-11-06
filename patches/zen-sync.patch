@@ -1,8 +1,8 @@
 diff --git a/modules/theme/PywalZenGenerator.qml b/modules/theme/PywalZenGenerator.qml
-index 1e7fdd79..a7a4c29b 100644
+index 1e7fdd79..0c15b5cd 100644
 --- a/modules/theme/PywalZenGenerator.qml
 +++ b/modules/theme/PywalZenGenerator.qml
-@@ -1,10 +1,32 @@
+@@ -1,10 +1,34 @@
  import QtQuick
  import Quickshell
  import Quickshell.Io
@@ -23,6 +23,8 @@ index 1e7fdd79..a7a4c29b 100644
 +            const command = ["python3", Quickshell.shellDir + "/scripts/zen_sync.py"]
 +            if (values.liveApply !== false)
 +                command.push("--live")
++            if (values.webThemes)
++                command.push("--web", values.webThemes)
 +            for (const profile of String(values.profiles ?? "").split(/[,\n]/)) {
 +                if (profile.trim())
 +                    command.push("--profile", profile.trim())
@@ -35,7 +37,7 @@ index 1e7fdd79..a7a4c29b 100644
      function generate(Colors) {
          if (!Colors) return
  
-@@ -61,6 +83,9 @@ QtObject {
+@@ -61,6 +85,9 @@ QtObject {
      property Process writerProcess: Process {
          id: writerProcess
          running: false
@@ -45,7 +47,7 @@ index 1e7fdd79..a7a4c29b 100644
          stdout: StdioCollector {
              onStreamFinished: console.log("PywalZenGenerator: Theme generated.")
          }
-@@ -73,4 +98,20 @@ QtObject {
+@@ -73,4 +100,20 @@ QtObject {
              }
          }
      }

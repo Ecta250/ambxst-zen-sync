@@ -1,0 +1,60 @@
+/* Wikipedia: Codex design tokens, for both the day and night themes. */
+:root, html.skin-theme-clientpref-night, html.skin-theme-clientpref-os {
+  --background-color-base: var(--ambxst-bg) !important;
+  --background-color-base-fixed: var(--ambxst-bg) !important;
+  --background-color-neutral: var(--ambxst-surface-2) !important;
+  --background-color-neutral-subtle: var(--ambxst-surface) !important;
+  --background-color-interactive: var(--ambxst-surface-2) !important;
+  --background-color-interactive--hover: var(--ambxst-surface-3) !important;
+  --background-color-interactive--active: var(--ambxst-surface-4) !important;
+  --background-color-interactive-subtle: var(--ambxst-surface) !important;
+  --background-color-interactive-subtle--hover: var(--ambxst-surface-2) !important;
+  --background-color-interactive-subtle--active: var(--ambxst-surface-3) !important;
+  --background-color-progressive: var(--ambxst-primary) !important;
+  --background-color-progressive--hover: var(--ambxst-primary) !important;
+  --background-color-progressive--focus: var(--ambxst-primary) !important;
+  --background-color-progressive-subtle: var(--ambxst-primary-container) !important;
+  --background-color-input-binary--checked: var(--ambxst-primary) !important;
+  --color-base: var(--ambxst-fg) !important;
+  --color-base--hover: var(--ambxst-fg) !important;
+  --color-base--subtle: var(--ambxst-fg-muted) !important;
+  --color-base-fixed: var(--ambxst-fg) !important;
+  --color-emphasized: var(--ambxst-fg) !important;
+  --color-subtle: var(--ambxst-fg-muted) !important;
+  --color-placeholder: var(--ambxst-outline) !important;
+  --color-progressive: var(--ambxst-primary) !important;
+  --color-progressive--hover: var(--ambxst-primary) !important;
+  --color-icon-progressive: var(--ambxst-primary) !important;
+  --color-inverted: var(--ambxst-on-primary) !important;
+  --color-link: var(--ambxst-primary) !important;
+  --color-link--hover: var(--ambxst-primary) !important;
+  --color-link--focus: var(--ambxst-primary) !important;
+  --color-link--visited: var(--ambxst-tertiary) !important;
+  --border-color-base: var(--ambxst-outline-variant) !important;
+  --border-color-divider: var(--ambxst-outline-variant) !important;
+  --border-color-muted: var(--ambxst-outline-variant) !important;
+  --border-color-subtle: var(--ambxst-outline-variant) !important;
+  --border-color-interactive: var(--ambxst-outline) !important;
+  --border-color-progressive: var(--ambxst-primary) !important;
+}
+/* Templates set these colours inline. */
+.infobox, .wikitable, .navbox, .navbox-subgroup, .sidebar, .ambox, .tmbox, .ombox, .quotebox, .thumbinner, #toc, .toc {
+  background: var(--ambxst-surface) !important;
+  color: var(--ambxst-fg) !important;
+  border-color: var(--ambxst-outline-variant) !important;
+}
+.wikitable > tr > th, .wikitable > * > tr > th, .navbox-title, .navbox-abovebelow, .navbox-group, .infobox-header, .infobox-above {
+  background: var(--ambxst-surface-3) !important;
+  color: var(--ambxst-fg) !important;
+}
+.navbox-list, .navbox-even, .navbox-odd {
+  background: transparent !important;
+}
+/* when-dark */
+/* Diagrams and the wordmark are drawn for a white page. */
+img.mw-file-element {
+  background-color: #fff;
+}
+.mw-logo-wordmark, .mw-logo-tagline {
+  filter: invert(1) hue-rotate(180deg);
+}

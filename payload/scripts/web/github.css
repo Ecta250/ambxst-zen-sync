@@ -1,0 +1,32 @@
+/* GitHub: Primer design tokens, defined on <html> for every colour mode. */
+:root, [data-color-mode] {
+  --bgColor-default: var(--ambxst-bg) !important;
+  --bgColor-muted: var(--ambxst-surface) !important;
+  --bgColor-inset: var(--ambxst-surface-lowest) !important;
+  --bgColor-emphasis: var(--ambxst-surface-4) !important;
+  --overlay-bgColor: var(--ambxst-surface-2) !important;
+  --header-bgColor: var(--ambxst-surface) !important;
+  --fgColor-default: var(--ambxst-fg) !important;
+  --fgColor-muted: var(--ambxst-fg-muted) !important;
+  --fgColor-accent: var(--ambxst-primary) !important;
+  --fgColor-link: var(--ambxst-primary) !important;
+  --borderColor-default: var(--ambxst-outline-variant) !important;
+  --borderColor-muted: var(--ambxst-outline-variant) !important;
+  --borderColor-accent-emphasis: var(--ambxst-primary) !important;
+  --bgColor-accent-emphasis: var(--ambxst-primary) !important;
+  --bgColor-accent-muted: color-mix(in srgb, var(--ambxst-primary) 15%, transparent) !important;
+  --button-default-bgColor-rest: var(--ambxst-surface-2) !important;
+  --button-default-bgColor-hover: var(--ambxst-surface-3) !important;
+  --button-default-borderColor-rest: var(--ambxst-outline-variant) !important;
+  --button-primary-bgColor-rest: var(--ambxst-primary) !important;
+  --button-primary-bgColor-hover: var(--ambxst-primary) !important;
+  --button-primary-fgColor-rest: var(--ambxst-on-primary) !important;
+  --button-primary-borderColor-rest: transparent !important;
+  --control-bgColor-rest: var(--ambxst-surface-2) !important;
+  --control-bgColor-hover: var(--ambxst-surface-3) !important;
+  --underlineNav-borderColor-active: var(--ambxst-primary) !important;
+  --focus-outlineColor: var(--ambxst-primary) !important;
+}
+.AppHeader, .Header {
+  background: var(--ambxst-surface) !important;
+}

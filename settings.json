@@ -17,6 +17,28 @@
       "type": "string",
       "default": "",
       "restartRequired": false
+    },
+    {
+      "key": "webThemes",
+      "label": "Web pages",
+      "description": "Colour web pages too. Base: text selection, scrollbars and form controls on every site. Sites: also YouTube, GitHub, Wikipedia and Twitch. Needs the Zen watcher from the README.",
+      "type": "enum",
+      "default": "sites",
+      "options": [
+        {
+          "label": "Off",
+          "value": "off"
+        },
+        {
+          "label": "Base",
+          "value": "base"
+        },
+        {
+          "label": "Base and sites",
+          "value": "sites"
+        }
+      ],
+      "restartRequired": false
     }
   ]
 }

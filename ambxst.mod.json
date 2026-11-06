@@ -3,8 +3,8 @@
   "manifestVersion": 1,
   "id": "ecta250.zen-sync",
   "name": "Zen Browser Sync",
-  "version": "2.0.0",
-  "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Finds the Zen profiles on its own.",
+  "version": "2.1.0",
+  "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Can also colour web pages: selection, scrollbars and form controls everywhere, plus YouTube, GitHub, Wikipedia and Twitch.",
   "license": "MIT",
   "author": "Ecta250",
   "authorUrl": "https://github.com/Ecta250",
@@ -23,9 +23,9 @@
     "axctl"
   ],
   "permissions": [
-    "Adds an \"Ambxst\" mod to the Zen profiles it finds (zen-themes.json, chrome/zen-themes/ambxst/chrome.css, chrome/zen-themes.css) and rewrites it on every theme change",
+    "Adds an \"Ambxst\" mod to the Zen profiles it finds (zen-themes.json, chrome/zen-themes/ambxst/chrome.css, chrome/zen-themes.css) and writes chrome/ambxst-web.css for web pages, on every theme change",
     "With live apply on and without the optional Zen watcher, briefly opens and closes a Zen window, then gives focus back to the previous window",
-    "payload/zen/install.sh, only if you run it (with sudo for a system install), adds a startup script to the Zen install folder"
+    "payload/zen/install.sh, only if you run it (with sudo for a system install), adds a startup script to the Zen install folder that reloads the mod and applies chrome/ambxst-web.css to web pages"
   ],
   "localization": {
     "mode": "single",
@@ -39,6 +39,31 @@
       "type": "overlay",
       "source": "payload/scripts/zen_sync.py",
       "target": "scripts/zen_sync.py"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/base.css",
+      "target": "scripts/web/base.css"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/youtube.css",
+      "target": "scripts/web/youtube.css"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/github.css",
+      "target": "scripts/web/github.css"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/wikipedia.css",
+      "target": "scripts/web/wikipedia.css"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/twitch.css",
+      "target": "scripts/web/twitch.css"
     },
     {
       "type": "patch",

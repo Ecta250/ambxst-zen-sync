@@ -1,0 +1,48 @@
+/* YouTube: most colours are build-specific hashed variables, so surfaces are set on its stable element names. */
+html, [dark] {
+  --yt-sys-color-baseline--base-background: var(--ambxst-bg) !important;
+  --yt-sys-color-baseline--raised-background: var(--ambxst-surface-2) !important;
+  --yt-sys-color-baseline--menu-background: var(--ambxst-surface-3) !important;
+  --yt-sys-color-baseline--surface-container: var(--ambxst-surface) !important;
+  --yt-sys-color-baseline--call-to-action: var(--ambxst-primary) !important;
+  --yt-sys-color-baseline--outline-opaque: var(--ambxst-outline-variant) !important;
+  --yt-spec-base-background: var(--ambxst-bg) !important;
+  --yt-spec-raised-background: var(--ambxst-surface-2) !important;
+  --yt-spec-menu-background: var(--ambxst-surface-3) !important;
+  --yt-spec-call-to-action: var(--ambxst-primary) !important;
+}
+html, body, ytd-app, ytd-browse, ytd-watch-flexy, ytd-search, ytd-page-manager,
+#masthead-container #background, #frosted-glass, ytd-masthead,
+ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer,
+tp-yt-app-drawer #contentContainer, #guide-content, ytd-guide-renderer,
+#header.ytd-rich-grid-renderer, ytd-feed-filter-chip-bar-renderer, #chips-wrapper {
+  background: var(--ambxst-bg) !important;
+}
+ytd-menu-popup-renderer, tp-yt-paper-listbox, ytd-multi-page-menu-renderer, yt-sheet-view-model,
+ytd-feed-nudge-renderer, ytd-background-promo-renderer {
+  background: var(--ambxst-surface-3) !important;
+}
+yt-chip-cloud-chip-renderer .ytChipShapeChip:not(.ytChipShapeActive) {
+  background: var(--ambxst-surface-2) !important;
+  color: var(--ambxst-fg) !important;
+}
+.ytChipShapeActive,
+#subscribe-button .yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono {
+  background: var(--ambxst-primary) !important;
+  color: var(--ambxst-on-primary) !important;
+}
+.ytSearchboxComponentInputBox, #container.ytd-searchbox {
+  background: var(--ambxst-surface) !important;
+  border-color: var(--ambxst-outline-variant) !important;
+}
+.ytSearchboxComponentSearchButton, #search-icon-legacy {
+  background: var(--ambxst-surface-2) !important;
+  border-color: var(--ambxst-outline-variant) !important;
+}
+ytd-guide-entry-renderer[active] tp-yt-paper-item {
+  background: var(--ambxst-surface-2) !important;
+}
+#progress.ytd-thumbnail-overlay-resume-playback-renderer, .ytp-swatch-background-color,
+.ytProgressBarLineProgressBarPlayed {
+  background: var(--ambxst-primary) !important;
+}

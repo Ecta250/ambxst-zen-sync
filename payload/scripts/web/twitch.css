@@ -1,0 +1,24 @@
+/* Twitch: theme variables on the root element, in both themes. */
+:root, .tw-root--theme-dark, .tw-root--theme-light {
+  --color-background-body: var(--ambxst-bg) !important;
+  --color-background-base: var(--ambxst-surface) !important;
+  --color-background-alt: var(--ambxst-surface-2) !important;
+  --color-background-alt-2: var(--ambxst-surface-3) !important;
+  --color-background-float: var(--ambxst-surface-3) !important;
+  --color-background-input: var(--ambxst-surface) !important;
+  --color-background-interactable-hover: color-mix(in srgb, var(--ambxst-fg) 10%, transparent) !important;
+  --color-background-button-secondary-default: var(--ambxst-surface-3) !important;
+  --color-background-button-secondary-hover: var(--ambxst-surface-4) !important;
+  --color-background-button-primary-default: var(--ambxst-primary) !important;
+  --color-background-button-primary-hover: var(--ambxst-primary) !important;
+  --color-background-accent: var(--ambxst-primary-container) !important;
+  --color-accent: var(--ambxst-primary) !important;
+  --color-text-base: var(--ambxst-fg) !important;
+  --color-text-alt: var(--ambxst-fg) !important;
+  --color-text-alt-2: var(--ambxst-fg-muted) !important;
+  --color-text-label: var(--ambxst-fg) !important;
+  --color-text-link: var(--ambxst-primary) !important;
+  --color-text-button-primary: var(--ambxst-on-primary) !important;
+  --color-border-base: var(--ambxst-outline-variant) !important;
+  --color-border-input: var(--ambxst-outline) !important;
+}

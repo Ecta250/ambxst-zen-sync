@@ -1,0 +1,10 @@
+/* Every site. Not !important, so a site's own styles still win. */
+:root {
+  accent-color: var(--ambxst-primary);
+  caret-color: var(--ambxst-primary);
+  scrollbar-color: var(--ambxst-outline) transparent;
+}
+::selection {
+  background-color: var(--ambxst-primary);
+  color: var(--ambxst-on-primary);
+}

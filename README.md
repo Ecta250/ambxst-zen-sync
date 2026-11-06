@@ -20,6 +20,16 @@ By default the mod uses the profiles Zen starts with: for each Zen install, the 
 
 To stop the colours in one profile, disable the **Ambxst** mod in Zen's settings. If you delete it there instead, it comes back on the next theme change.
 
+## Web pages
+
+With the Zen watcher below, web pages follow the theme as well. **Settings > Mods > Zen Browser Sync > Web pages**:
+
+- **Base**: text selection, scrollbars, caret and form controls on every site. Sites keep their own styles where they set them.
+- **Base and sites** (default): also YouTube, GitHub, Wikipedia and Twitch.
+- **Off**.
+
+Site styles live in `payload/scripts/web/`, one file per site, using the `--ambxst-*` variables. A site is added in `SITES` in `zen_sync.py` and as an overlay in `ambxst.mod.json`. Rules after a `/* when-dark */` line apply only with a dark theme. Sites change their markup now and then, so a style can need fixing.
+
 ## Updating open windows
 
 Zen does not watch its mod files. **Live apply** therefore opens a Zen window for about two seconds, because a new window makes Zen reload its mods everywhere. It is skipped while a window is fullscreen or when no Zen window is open; the colours then arrive with the next Zen window.
