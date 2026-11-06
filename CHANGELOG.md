@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.2.1
+- DuckDuckGo home page (duckduckgo.com and start.duckduckgo.com).
+
 ## 2.2.0
 - DuckDuckGo site theme.
 - Web page colours are switched in Zen: two checkboxes in the Ambxst mod's settings, applied without restart. The Ambxst-side Web pages setting is gone. Rerun install.sh and restart Zen.

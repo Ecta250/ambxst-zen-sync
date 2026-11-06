@@ -3,7 +3,7 @@
   "manifestVersion": 1,
   "id": "ecta250.zen-sync",
   "name": "Zen Browser Sync",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Can also colour web pages: selection, scrollbars and form controls everywhere, plus YouTube, GitHub, Wikipedia, Twitch and DuckDuckGo, each switchable in the Zen mod's settings.",
   "license": "MIT",
   "author": "Ecta250",

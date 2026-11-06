@@ -62,3 +62,32 @@ body, .site-wrapper {
 .nav-menu--slideout, .related-searches__item {
   background-color: var(--ambxst-surface-2) !important;
 }
+/* Home page (duckduckgo.com, start.duckduckgo.com): its own app, whose colour
+   variables are minified per build, so it is styled through its CSS module
+   class names, which keep a readable part. */
+html[data-startpage] {
+  --theme-bg-home-custom: var(--ambxst-bg) !important;
+}
+[class*="hero-layout-module"][class*="__heroWrap"], [class*="side-menu-module"][class*="__sideMenu"] {
+  background-color: var(--ambxst-bg) !important;
+  color: var(--ambxst-fg) !important;
+}
+[class*="search-toggle-box-module"][class*="__queryWrap"] {
+  background-color: var(--ambxst-surface-3) !important;
+}
+[class*="search-toggle-box-module"][class*="__queryInput"] {
+  color: var(--ambxst-fg) !important;
+}
+[class*="search-toggle-box-module"][class*="__queryInput"]::placeholder {
+  color: var(--ambxst-fg-muted) !important;
+}
+[class*="search-toggle-box-module"][class*="__modeSelector"] {
+  background-color: var(--ambxst-surface-2) !important;
+}
+[class*="search-toggle-box-module"][class*="__chip"][aria-checked="true"] {
+  background-color: var(--ambxst-primary) !important;
+  color: var(--ambxst-on-primary) !important;
+}
+[class*="tagline-module"], [class*="header-module"] {
+  color: var(--ambxst-fg) !important;
+}
