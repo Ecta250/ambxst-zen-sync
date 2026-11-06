@@ -22,13 +22,12 @@ To stop the colours in one profile, disable the **Ambxst** mod in Zen's settings
 
 ## Web pages
 
-With the Zen watcher below, web pages follow the theme as well. **Settings > Mods > Zen Browser Sync > Web pages**:
+With the Zen watcher below, web pages follow the theme as well. Two checkboxes in **Zen settings > Zen Mods > Ambxst** turn them on or off, without restarting:
 
-- **Base**: text selection, scrollbars, caret and form controls on every site. Sites keep their own styles where they set them.
-- **Base and sites** (default): also YouTube, GitHub, Wikipedia and Twitch.
-- **Off**.
+- **Colour web pages**: text selection, scrollbars, caret and form controls on every site. Sites keep their own styles where they set them.
+- **Site themes**: YouTube, GitHub, Wikipedia, Twitch and DuckDuckGo.
 
-Site styles live in `payload/scripts/web/`, one file per site, using the `--ambxst-*` variables. A site is added in `SITES` in `zen_sync.py` and as an overlay in `ambxst.mod.json`. Rules after a `/* when-dark */` line apply only with a dark theme. Sites change their markup now and then, so a style can need fixing.
+Site styles live in `payload/scripts/web/`, one file per site, using the `--ambxst-*` variables. A site is added in `SITES` in `zen_sync.py`, in the site themes label in `MOD_PREFERENCES`, and as an overlay in `ambxst.mod.json`. Rules after a `/* when-dark */` line apply only with a dark theme. Sites change their markup now and then, so a style can need fixing.
 
 ## Updating open windows
 

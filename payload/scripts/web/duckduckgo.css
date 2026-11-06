@@ -1,0 +1,64 @@
+/* DuckDuckGo: theme variables on <html>, in every theme. */
+:root, html.dark-bg {
+  --theme-col-bg-page: var(--ambxst-bg) !important;
+  --theme-col-bg-page-transparent: transparent !important;
+  --theme-col-metabar-bg: var(--ambxst-bg) !important;
+  --theme-col-bg-header: var(--ambxst-surface-lowest) !important;
+  --theme-col-bg-header-modal: var(--ambxst-surface-2) !important;
+  --theme-col-bg-page-alt-1: var(--ambxst-surface-3) !important;
+  --theme-col-bg-page-alt-2: var(--ambxst-surface) !important;
+  --theme-col-bg-page-alt-3: var(--ambxst-surface-lowest) !important;
+  --theme-col-bg-search: var(--ambxst-surface-2) !important;
+  --theme-col-bg-textarea: var(--ambxst-surface-2) !important;
+  --theme-col-bg-ui: var(--ambxst-surface-2) !important;
+  --theme-col-bg-ui-active: var(--ambxst-surface-3) !important;
+  --theme-col-bg-card: var(--ambxst-surface-2) !important;
+  --theme-col-bg-card-header: var(--ambxst-surface-3) !important;
+  --theme-col-bg-modal: var(--ambxst-surface-2) !important;
+  --theme-bg-dropdown: var(--ambxst-surface-3) !important;
+  --theme-pmenu-bg: var(--ambxst-surface-2) !important;
+  --theme-col-bg-pill: var(--ambxst-surface-3) !important;
+  --theme-col-bg-button-tab: var(--ambxst-surface-3) !important;
+  --theme-col-bg-button-tab-hover: var(--ambxst-surface-4) !important;
+  --theme-col-bg-button-tab-active: var(--ambxst-primary) !important;
+  --theme-col-txt-button-tab-active: var(--ambxst-on-primary) !important;
+  --theme-col-bg-button-primary: var(--ambxst-primary) !important;
+  --theme-col-bg-button-primary-hover: var(--ambxst-primary) !important;
+  --theme-col-txt-button-primary: var(--ambxst-on-primary) !important;
+  --result-item-bg: var(--ambxst-surface) !important;
+  --theme-col-bg-result-item-divider: var(--ambxst-bg) !important;
+  --theme-col-border-ui: var(--ambxst-outline-variant) !important;
+  --theme-col-menu-promo-border: var(--ambxst-outline-variant) !important;
+  --theme-col-border-large-tab-selected: var(--ambxst-primary) !important;
+  --theme-col-bg-txt-1: var(--ambxst-fg) !important;
+  --theme-col-bg-txt-2: var(--ambxst-fg) !important;
+  --theme-col-bg-txt-3: var(--ambxst-outline) !important;
+  --theme-col-txt-search-input: var(--ambxst-fg) !important;
+  --theme-col-txt-header-link: var(--ambxst-fg) !important;
+  --theme-col-txt-header-link-hover: var(--ambxst-fg) !important;
+  --theme-col-txt-title: var(--ambxst-primary) !important;
+  --theme-col-txt-title-visited: var(--ambxst-tertiary) !important;
+  --theme-col-txt-snippet: var(--ambxst-fg) !important;
+  --theme-col-txt-url: var(--ambxst-fg-muted) !important;
+  --theme-col-txt-url-domain: var(--ambxst-fg-muted) !important;
+  --theme-col-txt-url-path: var(--ambxst-fg-muted) !important;
+  --theme-col-txt-card: var(--ambxst-fg) !important;
+  --theme-col-txt-card-title: var(--ambxst-fg) !important;
+  --theme-col-txt-card-subtitle: var(--ambxst-fg) !important;
+  --theme-col-txt-card-body: var(--ambxst-fg) !important;
+  --theme-col-txt-card-aside: var(--ambxst-fg-muted) !important;
+  --theme-col-txt-large-tab: var(--ambxst-fg-muted) !important;
+  --theme-col-txt-button-ghost: var(--ambxst-primary) !important;
+  --theme-col-about-link: var(--ambxst-primary) !important;
+  --theme-col-module-link-new-ux: var(--ambxst-primary) !important;
+}
+/* The dark theme sets these surfaces directly. */
+body, .site-wrapper {
+  background-color: var(--ambxst-bg) !important;
+}
+.header-wrap, .footer {
+  background-color: var(--ambxst-surface-lowest) !important;
+}
+.nav-menu--slideout, .related-searches__item {
+  background-color: var(--ambxst-surface-2) !important;
+}
