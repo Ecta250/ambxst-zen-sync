@@ -46,7 +46,7 @@ MOD_PREFERENCES = [
     },
     {
         "property": "ambxst.web.sites",
-        "label": "Site themes: YouTube, GitHub, Wikipedia, Twitch, DuckDuckGo and Instagram",
+        "label": "Site themes: YouTube, GitHub, Wikipedia, Twitch, DuckDuckGo, Instagram and Reddit",
         "type": "checkbox",
         "defaultValue": True,
     },
@@ -66,6 +66,7 @@ SITES = {
     "twitch.css": ["twitch.tv"],
     "duckduckgo.css": ["duckduckgo.com"],
     "instagram.css": ["instagram.com"],
+    "reddit.css": ["reddit.com"],
 }
 # --ambxst-* variable -> Ambxst colour.
 PALETTE = {

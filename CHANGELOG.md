@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.0
+- Reddit site theme. Vote arrows keep their colours.
+
 ## 2.3.0
 - Instagram site theme, pop-ups included.
 - Every `--ambxst-*` colour also comes as an `R, G, B` triplet, `--ambxst-*-rgb`.

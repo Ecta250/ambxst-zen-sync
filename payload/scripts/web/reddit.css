@@ -1,0 +1,109 @@
+/* Reddit: design tokens on <html>, inherited by its web components. The vote
+   arrows and brand orange are left as they are. */
+:root, .theme-dark, .theme-light, .theme-beta {
+  --color-neutral-background: var(--ambxst-bg) !important;
+  --shreddit-content-background: var(--ambxst-bg) !important;
+  --styled-scrollbar-background: var(--ambxst-bg) !important;
+  --color-neutral-background-pinned: var(--ambxst-bg) !important;
+  --color-neutral-background-weak: var(--ambxst-surface-lowest) !important;
+  --color-neutral-background-weak-hover: var(--ambxst-surface) !important;
+  --color-neutral-background-medium: var(--ambxst-surface) !important;
+  --color-neutral-background-hover: var(--ambxst-surface-2) !important;
+  --color-neutral-background-strong: var(--ambxst-surface-2) !important;
+  --color-neutral-background-strong-hover: var(--ambxst-surface-3) !important;
+  --color-neutral-background-canvas: var(--ambxst-surface-2) !important;
+  --color-neutral-background-container: var(--ambxst-surface-2) !important;
+  --color-neutral-background-container-hover: var(--ambxst-surface-3) !important;
+  --color-neutral-background-container-strong: var(--ambxst-surface-3) !important;
+  --color-neutral-background-container-strong-hover: var(--ambxst-surface-4) !important;
+  --color-neutral-background-highlighted: var(--ambxst-surface-2) !important;
+  --color-neutral-background-highlighted-strong: var(--ambxst-surface-3) !important;
+  --color-neutral-background-selected: var(--ambxst-surface-3) !important;
+  --color-neutral-background-gilded: var(--ambxst-surface-2) !important;
+  --color-neutral-background-gilded-hover: var(--ambxst-surface-3) !important;
+  --color-ui-canvas: var(--ambxst-surface-lowest) !important;
+  --color-ui-modalbackground: var(--ambxst-surface-2) !important;
+  --color-banner-plain: var(--ambxst-surface-2) !important;
+  --color-tooltip-bg-neutral: var(--ambxst-surface-3) !important;
+  --color-tags-neutral-background: var(--ambxst-surface-3) !important;
+
+  --color-neutral-content: var(--ambxst-fg) !important;
+  --color-neutral-content-strong: var(--ambxst-fg) !important;
+  --color-neutral-content-weak: var(--ambxst-fg-muted) !important;
+  --color-tooltip-text-neutral: var(--ambxst-fg) !important;
+  --color-banner-plain-text: var(--ambxst-fg) !important;
+  --color-label-default: var(--ambxst-fg-muted) !important;
+  --color-input-helper-text: var(--ambxst-fg-muted) !important;
+  --color-input-bordered-text: var(--ambxst-fg) !important;
+  --color-input-secondary-text: var(--ambxst-fg) !important;
+  --color-input-text: var(--ambxst-fg) !important;
+  --color-tags-neutral-content: var(--ambxst-fg-muted) !important;
+
+  --color-neutral-border: var(--ambxst-outline-variant) !important;
+  --color-neutral-border-weak: var(--ambxst-outline-variant) !important;
+  --color-neutral-border-divider: var(--ambxst-outline-variant) !important;
+  --color-neutral-border-medium: var(--ambxst-outline) !important;
+  --color-divider-default: var(--ambxst-outline-variant) !important;
+
+  --color-secondary: var(--ambxst-fg) !important;
+  --color-secondary-plain: var(--ambxst-fg) !important;
+  --color-secondary-weak: var(--ambxst-fg-muted) !important;
+  --color-secondary-plain-weak: var(--ambxst-fg-muted) !important;
+  --color-secondary-background: var(--ambxst-surface-3) !important;
+  --color-secondary-background-hover: var(--ambxst-surface-4) !important;
+  --color-secondary-background-selected: var(--ambxst-surface-4) !important;
+  --color-input-secondary: var(--ambxst-surface-3) !important;
+  --color-input-secondary-hover: var(--ambxst-surface-4) !important;
+  --color-input-bordered-hover: var(--ambxst-surface-2) !important;
+
+  --color-primary: var(--ambxst-primary) !important;
+  --color-primary-plain: var(--ambxst-primary) !important;
+  --color-primary-hover: var(--ambxst-primary) !important;
+  --color-primary-plain-hover: var(--ambxst-primary) !important;
+  --color-primary-visited: var(--ambxst-tertiary) !important;
+  --color-primary-plain-visited: var(--ambxst-tertiary) !important;
+  --color-primary-background: var(--ambxst-primary) !important;
+  --color-primary-background-hover: var(--ambxst-primary) !important;
+  --color-primary-background-selected: var(--ambxst-primary) !important;
+  --color-primary-background-highlighted: var(--ambxst-primary-container) !important;
+  --color-primary-onBackground: var(--ambxst-on-primary) !important;
+  --color-primary-onBackground-selected: var(--ambxst-on-primary) !important;
+  --color-primarynext-plain: var(--ambxst-primary) !important;
+  --color-primarynext-plain-hover: var(--ambxst-primary) !important;
+  --color-primarynext-plain-visited: var(--ambxst-tertiary) !important;
+  --color-a-default: var(--ambxst-primary) !important;
+  --color-a-hover: var(--ambxst-primary) !important;
+  --color-a-visited: var(--ambxst-tertiary) !important;
+  --color-interactive-focused: var(--ambxst-primary) !important;
+
+  --button-color-background-default: var(--ambxst-surface-3) !important;
+  --button-color-background-focus: var(--ambxst-surface-3) !important;
+  --button-color-background-hover: var(--ambxst-surface-4) !important;
+  --button-color-background-activated: var(--ambxst-surface-4) !important;
+  --button-color-text-default: var(--ambxst-fg) !important;
+  --color-button-secondary-background: var(--ambxst-surface-3) !important;
+  --color-button-secondary-background-focus: var(--ambxst-surface-3) !important;
+  --color-button-secondary-background-hover: var(--ambxst-surface-4) !important;
+  --color-button-secondary-background-activated: var(--ambxst-surface-4) !important;
+  --color-button-secondary-text: var(--ambxst-fg) !important;
+  --color-button-plain-text: var(--ambxst-fg) !important;
+  --color-button-plain-text-weak: var(--ambxst-fg-muted) !important;
+  --color-button-plain-background-hover: var(--ambxst-surface-3) !important;
+  --color-button-plain-background-activated: var(--ambxst-surface-4) !important;
+  --color-button-tertiary-text: var(--ambxst-fg) !important;
+  --color-button-tertiary-background-hover: var(--ambxst-surface-3) !important;
+  --color-button-primary-background-hover: var(--ambxst-primary) !important;
+  --color-button-primary-background-activated: var(--ambxst-primary) !important;
+  --color-button-primary-text-activated: var(--ambxst-on-primary) !important;
+
+  --color-switch-input-background-default: var(--ambxst-surface-4) !important;
+  --color-switch-input-background-checked: var(--ambxst-primary) !important;
+  --color-switch-input-background-checked-hover: var(--ambxst-primary) !important;
+  --color-primary-switchBackground: var(--ambxst-surface-4) !important;
+  --color-primary-switchBackground-selected: var(--ambxst-primary) !important;
+}
+/* The search box sets its own background inside its shadow root. */
+faceplate-search-input {
+  --background-color: var(--ambxst-surface-2) !important;
+  --scrollbar-background: var(--ambxst-surface-2) !important;
+}
