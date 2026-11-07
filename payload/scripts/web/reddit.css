@@ -1,6 +1,7 @@
-/* Reddit: design tokens on <html>, inherited by its web components. The vote
-   arrows and brand orange are left as they are. */
-:root, .theme-dark, .theme-light, .theme-beta {
+/* Reddit: design tokens on <html>, set again on the .theme-rpl page container,
+   inherited by its web components. The vote arrows and brand orange are left
+   as they are. */
+:root, .theme-dark, .theme-light, .theme-beta, .theme-rpl {
   --color-neutral-background: var(--ambxst-bg) !important;
   --shreddit-content-background: var(--ambxst-bg) !important;
   --styled-scrollbar-background: var(--ambxst-bg) !important;
@@ -71,6 +72,17 @@
   --color-primarynext-plain: var(--ambxst-primary) !important;
   --color-primarynext-plain-hover: var(--ambxst-primary) !important;
   --color-primarynext-plain-visited: var(--ambxst-tertiary) !important;
+  --color-primary-plain-selected: var(--ambxst-primary) !important;
+  --color-primarynext-plain-selected: var(--ambxst-primary) !important;
+  --color-primarynext-background: var(--ambxst-primary) !important;
+  --color-primarynext-onBackground: var(--ambxst-on-primary) !important;
+  --color-tooltip-bg-primary: var(--ambxst-primary) !important;
+  --color-tooltip-text-primary: var(--ambxst-on-primary) !important;
+  --color-button-primary-border-hover: var(--ambxst-primary) !important;
+  --color-banner-plain-inverted: var(--ambxst-fg) !important;
+  --color-banner-plain-inverted-text: var(--ambxst-bg) !important;
+  --color-input-radio: var(--ambxst-fg-muted) !important;
+  --color-input-radio-hover: var(--ambxst-fg) !important;
   --color-a-default: var(--ambxst-primary) !important;
   --color-a-hover: var(--ambxst-primary) !important;
   --color-a-visited: var(--ambxst-tertiary) !important;

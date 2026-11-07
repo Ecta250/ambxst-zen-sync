@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.5.1
+- Reddit: its colours are set again on the page container (`.theme-rpl`), which left the feed header, tabs, secondary text, Join buttons and the recent posts rail in Reddit's colours. Those now follow the theme.
+
 ## 2.5.0
 - X site theme (x.com and twitter.com), for the Lights out and Dim themes. The light theme and custom accent colours other than blue are left as they are.
 
