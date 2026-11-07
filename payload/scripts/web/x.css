@@ -1,0 +1,95 @@
+/* X: colours are atomic classes and inline styles, not variables, so the dark
+   themes (Lights out, Dim) are matched by colour value. Light theme is left as is. */
+body {
+  background-color: var(--ambxst-bg) !important;
+  color: var(--ambxst-fg) !important;
+  scrollbar-color: var(--ambxst-outline) var(--ambxst-surface) !important;
+}
+.r-kemksi,
+[style*="background-color: rgb(0, 0, 0)"] {
+  background-color: var(--ambxst-bg) !important;
+}
+[style*="background-color: rgb(21, 32, 43)"] {
+  background-color: var(--ambxst-bg) !important;
+}
+[style*="background-color: rgb(22, 24, 28)"] {
+  background-color: var(--ambxst-surface) !important;
+}
+[style*="background-color: rgb(30, 39, 50)"] {
+  background-color: var(--ambxst-surface) !important;
+}
+[style*="background-color: rgb(32, 35, 39)"] {
+  background-color: var(--ambxst-surface-2) !important;
+}
+.r-gu4em3,
+[style*="background-color: rgb(47, 51, 54)"] {
+  background-color: var(--ambxst-surface-3) !important;
+}
+.r-l5o3uw,
+[style*="background-color: rgb(29, 155, 240)"] {
+  background-color: var(--ambxst-primary) !important;
+}
+[style*="background-color: rgb(239, 243, 244)"] {
+  background-color: var(--ambxst-fg) !important;
+}
+.r-1kqtdi0,
+.r-motplv,
+.r-1hm43qg,
+.r-2sztyj,
+.r-1igl3o0,
+[style*="border-color: rgb(47, 51, 54)"] {
+  border-color: var(--ambxst-outline-variant) !important;
+}
+[style*="border-color: rgb(56, 68, 77)"] {
+  border-color: var(--ambxst-outline-variant) !important;
+}
+.r-1xc7w19,
+[style*="border-color: rgb(0, 0, 0)"] {
+  border-color: var(--ambxst-bg) !important;
+}
+[style*="border-color: rgb(83, 100, 113)"] {
+  border-color: var(--ambxst-outline) !important;
+}
+.r-1nao33i,
+[style*="color: rgb(231, 233, 234)"] {
+  color: var(--ambxst-fg) !important;
+}
+[style*="color: rgb(239, 243, 244)"] {
+  color: var(--ambxst-fg) !important;
+}
+[style*="color: rgb(247, 249, 249)"] {
+  color: var(--ambxst-fg) !important;
+}
+.r-1bwzh9t,
+[style*="color: rgb(113, 118, 123)"] {
+  color: var(--ambxst-fg-muted) !important;
+}
+[style*="color: rgb(139, 152, 165)"] {
+  color: var(--ambxst-fg-muted) !important;
+}
+.r-1cvl2hr,
+[style*="color: rgb(29, 155, 240)"] {
+  color: var(--ambxst-primary) !important;
+}
+.r-1otekoa,
+[style*="color: rgb(51, 54, 57)"] {
+  color: var(--ambxst-outline-variant) !important;
+}
+[style*="color: rgb(62, 65, 68)"] {
+  color: var(--ambxst-outline) !important;
+}
+/* Text on the accent (Post, Follow back) and on the light Follow buttons. */
+.r-l5o3uw, .r-l5o3uw *, [style*="background-color: rgb(29, 155, 240)"], [style*="background-color: rgb(29, 155, 240)"] * {
+  color: var(--ambxst-on-primary) !important;
+}
+[style*="background-color: rgb(239, 243, 244)"], [style*="background-color: rgb(239, 243, 244)"] * {
+  color: var(--ambxst-bg) !important;
+}
+/* Translucent header bars. */
+[style*="background-color: rgba(0, 0, 0, 0.65)"], [style*="background-color: rgba(21, 32, 43, 0.75)"] {
+  background-color: color-mix(in srgb, var(--ambxst-bg) 75%, transparent) !important;
+}
+/* Composer placeholder. */
+.public-DraftEditorPlaceholder-root {
+  color: var(--ambxst-fg-muted) !important;
+}

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.5.0
+- X site theme (x.com and twitter.com), for the Lights out and Dim themes. The light theme and custom accent colours other than blue are left as they are.
+
 ## 2.4.0
 - Reddit site theme. Vote arrows keep their colours.
 

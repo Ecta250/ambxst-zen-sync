@@ -3,8 +3,8 @@
   "manifestVersion": 1,
   "id": "ecta250.zen-sync",
   "name": "Zen Browser Sync",
-  "version": "2.4.0",
-  "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Can also colour web pages: selection, scrollbars and form controls everywhere, plus YouTube, GitHub, Wikipedia, Twitch, DuckDuckGo, Instagram and Reddit, each switchable in the Zen mod's settings.",
+  "version": "2.5.0",
+  "description": "Creates an \"Ambxst\" mod in Zen Browser and keeps it in your Ambxst colours on every theme change, including in Zen windows already open. Can also colour web pages: selection, scrollbars and form controls everywhere, plus YouTube, GitHub, Wikipedia, Twitch, DuckDuckGo, Instagram, Reddit and X, each switchable in the Zen mod's settings.",
   "license": "MIT",
   "author": "Ecta250",
   "authorUrl": "https://github.com/Ecta250",
@@ -79,6 +79,11 @@
       "type": "overlay",
       "source": "payload/scripts/web/reddit.css",
       "target": "scripts/web/reddit.css"
+    },
+    {
+      "type": "overlay",
+      "source": "payload/scripts/web/x.css",
+      "target": "scripts/web/x.css"
     },
     {
       "type": "patch",
