@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.0
+- Instagram site theme, pop-ups included.
+- Every `--ambxst-*` colour also comes as an `R, G, B` triplet, `--ambxst-*-rgb`.
+
 ## 2.2.1
 - DuckDuckGo home page (duckduckgo.com and start.duckduckgo.com).
 
