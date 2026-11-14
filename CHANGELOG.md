@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.5.2
+- Light Ambxst themes: Zen's text (sidebar, tabs, toolbar, address bar, menus) and its light/dark mode now follow the Ambxst theme instead of Zen's space colours, which kept white text on a light background.
+
 ## 2.5.1
 - Reddit: its colours are set again on the page container (`.theme-rpl`), which left the feed header, tabs, secondary text, Join buttons and the recent posts rail in Reddit's colours. Those now follow the theme.
 

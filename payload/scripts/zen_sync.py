@@ -220,6 +220,35 @@ def is_dark(hex_colour):
     return 0.2126 * red + 0.7152 * green + 0.0722 * blue < 128
 
 
+def ui_text_css(colors_path):
+    """Zen's text colour and light/dark mode, from the Ambxst theme.
+
+    Zen derives both from its own space colours and sets them inline on the
+    window and on each <zen-workspace>, so a light Ambxst background would keep
+    Zen's white text. These rules win over those inline styles.
+    """
+    colours = json.loads(read(colors_path) or "{}")
+    if not colours.get("background") or not colours.get("overSurface"):
+        return ""
+    scheme = "dark" if is_dark(colours["background"]) else "light"
+    text = colours["overSurface"]
+    return (
+        "\n/* Text and light/dark mode follow the Ambxst theme. */\n"
+        ":root, #browser, zen-workspace {\n"
+        f"  color-scheme: {scheme} !important;\n"
+        f"  --toolbar-color-scheme: {scheme} !important;\n"
+        f"  --toolbox-textcolor: {text} !important;\n"
+        f"  --toolbox-textcolor-inactive: {text} !important;\n"
+        f"  --toolbar-color: {text} !important;\n"
+        f"  --toolbar-field-color: {text} !important;\n"
+        f"  --toolbar-field-focus-color: {text} !important;\n"
+        f"  --tab-selected-textcolor: {text} !important;\n"
+        f"  --sidebar-text-color: {text} !important;\n"
+        f"  --arrowpanel-color: {text} !important;\n"
+        "}\n"
+    )
+
+
 def web_css(colors_path):
     """Style sheets for web pages: base rules for all sites, and per-site rules."""
     colours = json.loads(read(colors_path) or "{}")
@@ -358,6 +387,7 @@ def main():
         print("zen_sync: no Zen profile found", file=sys.stderr)
         return 1
 
+    css = css.rstrip("\n") + "\n" + ui_text_css(args.colors)
     web = web_css(args.colors)
     changed = [profile for profile in profiles if sync_profile(profile, css, web)]
     for profile in changed:
