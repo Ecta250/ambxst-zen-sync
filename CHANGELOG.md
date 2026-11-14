@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.3
+- Light Ambxst themes: DuckDuckGo and YouTube kept white text when the site itself is set to its dark theme. Their text now follows the theme.
+- Site styles can have `/* when-light */` sections, like `/* when-dark */`.
+
 ## 2.5.2
 - Light Ambxst themes: Zen's text (sidebar, tabs, toolbar, address bar, menus) and its light/dark mode now follow the Ambxst theme instead of Zen's space colours, which kept white text on a light background.
 

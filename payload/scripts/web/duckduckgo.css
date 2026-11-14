@@ -91,3 +91,19 @@ html[data-startpage] {
 [class*="tagline-module"], [class*="header-module"] {
   color: var(--ambxst-fg) !important;
 }
+/* when-light */
+/* A light Ambxst theme with DuckDuckGo set to its dark theme: some of its
+   components keep white text that no variable controls, so text follows the
+   theme, links aside. */
+html.dark-bg body {
+  color: var(--ambxst-fg) !important;
+}
+html.dark-bg body :not(a, a *, svg, svg *, input, textarea) {
+  color: inherit !important;
+}
+html.dark-bg :is(input, textarea) {
+  color: var(--ambxst-fg) !important;
+}
+html.dark-bg [id^="contextMenu-"] {
+  background-color: var(--ambxst-surface-3) !important;
+}

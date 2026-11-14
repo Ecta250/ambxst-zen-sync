@@ -46,3 +46,17 @@ ytd-guide-entry-renderer[active] tp-yt-paper-item {
 .ytProgressBarLineProgressBarPlayed {
   background: var(--ambxst-primary) !important;
 }
+/* when-light */
+/* A light Ambxst theme with YouTube set to its dark theme: its text colours
+   are build-specific variables, so text follows the theme. Thumbnails and the
+   player keep white text on their dark overlays. */
+html[dark] body, html[dark] body :not(svg, svg *) {
+  color: var(--ambxst-fg) !important;
+}
+html[dark] :is(#movie_player, ytd-thumbnail, yt-thumbnail-view-model, .ytThumbnailViewModelHost) * {
+  color: #fff !important;
+}
+html[dark] .ytChipShapeActive,
+html[dark] #subscribe-button .yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono {
+  color: var(--ambxst-on-primary) !important;
+}
